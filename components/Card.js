@@ -5,7 +5,8 @@ import { Image } from 'react-native';
 import { Container, Header, Content, 
     Card, CardItem, Thumbnail, 
     Text, Button, Icon, 
-    Left, Body, Right } from 'native-base';
+    Left, Body, Right 
+} from 'native-base';
 
 export class CardComponent extends Component {
 

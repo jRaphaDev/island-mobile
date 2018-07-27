@@ -11,11 +11,13 @@ import {
 export class Home extends Component {
     
     render() {
+        const { navigate } = this.props.navigation;
+
         return (<Container>
 
                 <Header>
                     <Left>
-                        <Button transparent>
+                        <Button transparent onPress={() => navigate('Commerce')}>
                             <Icon name='menu' />
                         </Button>
                     </Left>
