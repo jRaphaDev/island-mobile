@@ -30,7 +30,7 @@ export class Commerce extends Component {
                     </Body>
                     <Right>
                         <Button transparent>
-                        <Text>Cancel</Text>
+                            <Text>Cancel</Text>
                         </Button>
                     </Right>
                 </Header>

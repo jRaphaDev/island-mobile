@@ -22,7 +22,7 @@ export class Home extends Component {
                     <Body>
                         <Title>Home</Title>
                     </Body>
-                  <Right />
+                    <Right />
                 </Header>
 
                 <Content>
