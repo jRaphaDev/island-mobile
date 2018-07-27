@@ -1,7 +1,11 @@
 
 import React, { Component } from 'react';
 import { Alert } from 'react-native';
-import { Container, Title, Header, Icon, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
+import { Container, Title, Header, 
+    Icon, Content, List,
+    ListItem, Thumbnail, Text, 
+    Left, Body, Right, Button 
+} from 'native-base';
 
 export class Commerce extends Component {
 
@@ -29,7 +33,7 @@ export class Commerce extends Component {
                         <Title>Header</Title>
                     </Body>
                     <Right>
-                        <Button transparent>
+                        <Button transparent onPress={() => this.props.navigation.goBack()} >
                             <Text>Cancel</Text>
                         </Button>
                     </Right>

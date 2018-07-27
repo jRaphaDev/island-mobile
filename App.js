@@ -1,13 +1,24 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { Home } from './components/Home';
 import { Commerce } from './components/Commerce';
-import { CardComponent } from './components/Card';
 
-export default class App extends React.Component {
+import {
+  createStackNavigator,
+} from 'react-navigation';
+
+
+export class App extends React.Component {
   render() {
-    return (
-      <CardComponent />
-      );
+    return (<RootStack />);
   }
 }
+
+export default RootStack = createStackNavigator(
+  { 
+    Home: { screen: Home },
+    Commerce: { screen: Commerce }
+  },
+  {
+    initialRouteName: 'Home'
+  }
+);
