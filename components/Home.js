@@ -10,14 +10,17 @@ import {
 
 export class Home extends Component {
     
+    constructor() {
+        super();
+    }
     render() {
-        const { navigate } = this.props.navigation;
+        const navigation  = this.props.navigation;
 
         return (<Container>
 
                 <Header>
                     <Left>
-                        <Button transparent onPress={() => navigate('Commerce')}>
+                        <Button transparent onPress={() => navigation.openDrawer()}>
                             <Icon name='menu' />
                         </Button>
                     </Left>

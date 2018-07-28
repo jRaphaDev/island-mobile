@@ -10,7 +10,8 @@ import { Container, Title, Header,
 export class Commerce extends Component {
 
     constructor() {
-        super();
+        super()
+        
         this.state = {
             commerces: [
                 { title: 'Title I', discribe: 'Describe item I'},
@@ -21,12 +22,14 @@ export class Commerce extends Component {
     }
 
     render() {
+        const navigation  = this.props.navigation;
+
         return (
             <Container>
                 <Header>
                     <Left>
                         <Button transparent>
-                            <Icon name='menu' />
+                            <Icon name='menu' onPress={() => navigation.openDrawer()} />
                         </Button>
                     </Left>
                     <Body>
